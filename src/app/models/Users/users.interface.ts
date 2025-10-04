@@ -1,16 +1,14 @@
-const enum UserRole {
+export enum UserRole {
   ADMIN = "admin",
   VENDOR = "vendor",
-  CUSTOMER = "customer"
+  CUSTOMER = "customer",
 }
 
-const enum UserStatus {
+export enum UserStatus {
   ACTIVE = "active",
   BLOCKED = "blocked",
-  SUSPENDED = "suspended"
+  SUSPENDED = "suspended",
 }
-
-
 export interface IUser {
   _id?: string;
   name: string;
@@ -20,8 +18,7 @@ export interface IUser {
   phone?: string;
   address?: string;
   image?: string;
-  status?: UserStatus;     
+  status?: UserStatus;
   isDeleted?: boolean;
   isVerified?: boolean;
-
 }
