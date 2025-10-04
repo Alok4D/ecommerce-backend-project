@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // Input / Output directories
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Module & Target for Node.js
+    "module": "CommonJS",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Type Definitions
+    "types": ["node"],
+
+    // Source Maps & Declaration files
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Type Checking
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Skip checking library types for faster compilation
+    "skipLibCheck": true
+  },
+
+  // Include all TS files under src
+  "include": ["src/**/*"]
+}
