@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import app from ".";
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 const DB_URL =
   process.env.DATABASE_URL ||
   "mongodb+srv://ecommerceBackendProjectBdCalling:A3IOhzgJk1Z74tqR@cluster0.1yjndj5.mongodb.net/ecommerceBackendProject?retryWrites=true&w=majority&appName=Cluster0";

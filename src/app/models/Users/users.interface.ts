@@ -1,6 +1,5 @@
 export enum UserRole {
   ADMIN = "admin",
-  VENDOR = "vendor",
   CUSTOMER = "customer",
 }
 
@@ -10,15 +9,10 @@ export enum UserStatus {
   SUSPENDED = "suspended",
 }
 export interface IUser {
-  _id?: string;
-  name: string;
-  email: string;
-  password: string;
-  role: UserRole;
-  phone?: string;
-  address?: string;
-  image?: string;
+  _id?: string;                
+  name: string;               
+  email: string;               // Must be unique and valid email
+  password: string;            // Hashed password
+  role: UserRole;              // Role-based access control
   status?: UserStatus;
-  isDeleted?: boolean;
-  isVerified?: boolean;
 }
